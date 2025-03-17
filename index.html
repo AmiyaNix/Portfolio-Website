@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS for contact form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("DPb3MaUFzLxBE1vZp");
+        })();
+    </script>
+</head>
+<body>
+    <!-- Background Shapes -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+    <div class="bg-shape bg-shape-3"></div>
+    <div class="bg-shape bg-shape-4"></div>
+    
+    <!-- Dot Patterns -->
+    <div class="dot-pattern dot-pattern-1"></div>
+    <div class="dot-pattern dot-pattern-2"></div>
+
+    <header>
+        <div class="logo" id="logo">
+            <h1>AKN <span>Portfolio</span></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <!-- Floating elements -->
+        <div class="floating-element float-1"></div>
+        <div class="floating-element float-2"></div>
+        <div class="floating-element float-3"></div>
+        <div class="floating-element float-4"></div>
+        
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Amiya Nayak</span></h1>
+            <h2>Software Developer</h2>
+            <p>"Code never lies, comments sometimes do."</p>
+            <div class="cta-buttons">
+                <a href="#works" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="image-container">
+                <div class="tech-border"></div>
+                <div class="tech-dots">
+                    <div class="tech-dot"></div>
+                    <div class="tech-dot"></div>
+                    <div class="tech-dot"></div>
+                    <div class="tech-dot"></div>
+                </div>
+                <img src="assets/profile.jpg" alt="Profile Image" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="assets/about.png" alt="About Me Image">
+            </div>
+            <div class="about-text">
+                <h3>Software Developer based in <span>India</span></h3>
+                <p>I'm a motivated Cloud Computing enthusiast with a strong foundation in programming languages like Java and Python. My expertise lies in AWS, Azure, CI/CD, Kubernetes, and DevOps, enabling me to build scalable and efficient cloud-based solutions.</p>
+                <p>Passionate about AI and Machine Learning, I leverage my skills to develop innovative and transformative solutions while continuously learning from industry advancements to drive organizational growth.</p>
+                <div class="about-details">
+                    <div class="detail">
+                        <span class="label">Name:</span>
+                        <span class="value">Amiya Kumar Nayak</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Email:</span>
+                        <span class="value">amiyanayak3105@gmail.com</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Location:</span>
+                        <span class="value">Chandigarh, India</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Availability:</span>
+                        <span class="value">Open to opportunities</span>
+                    </div>
+                </div>
+                <a href="assets/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section-title">
+            <h2>My Skills</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-content">
+            <div class="skill-category">
+                <h3>Cloud Services</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                        <h4>AWS</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                        <h4>Azure</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-google"></i></div>
+                        <h4>Google Cloud</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h4>Cloud Computing</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>DevOps</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                        <h4>Docker</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
+                        <h4>Kubernetes</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-jenkins"></i></div>
+                        <h4>Jenkins</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <h4>Git & GitHub</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <h4>Shell Scripting</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <h4>Ansible</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 78%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Core Concepts</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h4>Data Structures & Algorithms</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                        <h4>Linux</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>DBMS</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 82%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-java"></i></div>
+                        <h4>Java</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h4>Python</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h4>C++</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>SQL</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                        <h4>Object Oriented Programming</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Other Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                        <h4>Canva Design</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                        <h4>Agile Development</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="works">
+        <div class="circuit-line circuit-line-1"></div>
+        <div class="circuit-line circuit-line-2"></div>
+        <div class="circuit-line circuit-line-3"></div>
+        <div class="circuit-line circuit-line-4"></div>
+        <div class="circuit-line circuit-line-5"></div>
+        
+        <div class="digital-node node-1"></div>
+        <div class="digital-node node-2"></div>
+        <div class="digital-node node-3"></div>
+        <div class="digital-node node-4"></div>
+        <div class="digital-node node-5"></div>
+        <div class="digital-node node-6"></div>
+        <div class="digital-node node-7"></div>
+        <div class="digital-node node-8"></div>
+        
+        <div class="data-stream stream-1"></div>
+        <div class="data-stream stream-2"></div>
+        <div class="data-stream stream-3"></div>
+        
+        <div class="binary-rain"></div>
+        <div class="holo-grid"></div>
+        <div class="tech-radar">
+            <div class="radar-sweep"></div>
+        </div>
+        
+        <div class="section-title">
+            <h2>My Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="works-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="cloud">Cloud & AI</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+        </div>
+        <div class="works-grid">
+            <div class="work-item" data-category="ml">
+                <div class="work-image">
+                    <img src="assets/ai-voice-assistant.png" alt="AI Voice Assistant">
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <div>
+                                <h3>AI Voice Assistant</h3>
+                                <p>An intelligent voice assistant built using Python and natural language processing. Features include voice command recognition, task automation, web searching, weather updates, and smart home device control. Implements speech-to-text and text-to-speech conversion for seamless interaction.</p>
+                            </div>
+                            <div class="work-links">
+                                <a href="#" class="work-link" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="#" class="work-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="ml">
+                <div class="work-image">
+                    <img src="assets/chatbot.jpeg" alt="ChatBot">
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <div>
+                                <h3>Intelligent ChatBot</h3>
+                                <p>A sophisticated chatbot built using modern AI APIs including Groq and Cohere. The application leverages these powerful language models to provide contextual responses, answer questions, and assist users with various tasks. Features a clean user interface and seamless integration with existing platforms.</p>
+                            </div>
+                            <div class="work-links">
+                                <a href="#" class="work-link" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="#" class="work-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="ml">
+                <div class="work-image">
+                    <img src="assets/digit-recognition.png" alt="Handwritten Digit Recognition">
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <div>
+                                <h3>Handwritten Numerical Recognition System</h3>
+                                <p>Developed a deep learning model using Convolutional Neural Networks (CNN) to recognize handwritten digits with high accuracy. Implemented using TensorFlow and Keras, trained on the MNIST dataset, achieving 99% accuracy in digit classification.</p>
+                            </div>
+                            <div class="work-links">
+                                <a href="#" class="work-link" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="#" class="work-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="ml">
+                <div class="work-image">
+                    <img src="assets/movie-recommender.jpg" alt="Movie Recommender">
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <div>
+                                <h3>Movie Recommender</h3>
+                                <p>A content-based recommendation system that suggests movies based on users' previous preferences and watching history. The system analyzes movie features and user behavior to provide personalized recommendations.</p>
+                            </div>
+                            <div class="work-links">
+                                <a href="#" class="work-link" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/AmiyaNix/Movie-Recommender-System.git" class="work-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="ml">
+                <div class="work-image">
+                    <img src="assets/image-stitching.jpg" alt="Image Stitching">
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <div>
+                                <h3>Image Stitching using Seam Carving</h3>
+                                <p>An innovative image stitching solution that uses seam carving technology to create seamless panoramas. The project intelligently identifies and removes unnecessary seams for natural, distortion-free image merging.</p>
+                            </div>
+                            <div class="work-links">
+                                <a href="#" class="work-link" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/AmiyaNix/Image-Stitching-using-Seam-Carving.git" class="work-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="java">
+                <div class="work-image">
+                    <img src="assets/billing-system.jpg" alt="Electricity Billing System">
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <div>
+                                <h3>Electricity Billing Management System</h3>
+                                <p>A Java-based system that automates electricity billing processes, including meter reading management, charge calculation, invoice generation, and payment tracking. The system improves efficiency and reduces manual errors.</p>
+                            </div>
+                            <div class="work-links">
+                                <a href="#" class="work-link" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/AmiyaNix/Electricity-Billing-System.git" class="work-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="cloud">
+                <div class="work-image">
+                    <img src="assets/sentiment-analysis.jpg" alt="Sentiment Analysis">
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <div>
+                                <h3>Customer Review Sentiment Analysis</h3>
+                                <p>Utilizes Azure Cognitive Services' Text Analytics API to perform sentiment analysis on customer reviews, determining whether text expresses positive, negative, or neutral sentiment. Helps businesses understand customer feedback effectively.</p>
+                            </div>
+                            <div class="work-links">
+                                <a href="#" class="work-link" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/AmiyaNix/Customer-Review-Sentimental-Analysis-using-Azure-Cognitive-Services.git" class="work-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="web">
+                <div class="work-image">
+                    <img src="assets/criativo.jpg" alt="Criativo">
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <div>
+                                <h3>Criativo - Project Collaboration Platform</h3>
+                                <p>A collaborative platform for students to discover project ideas based on their skill sets, propose their own ideas, and receive feedback from peers. Facilitates project-based learning and collaboration.</p>
+                            </div>
+                            <div class="work-links">
+                                <a href="https://amiyanix.github.io/Criativo---A-Website-for-Project-Ideas/" class="work-link" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/AmiyaNix/Criativo---A-Website-for-Project-Ideas.git" class="work-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item" data-category="web">
+                <div class="work-image">
+                    <img src="assets/portfolio.png" alt="Portfolio Website">
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <div>
+                                <h3>Personal Portfolio Website</h3>
+                                <p>A responsive portfolio website built using HTML and CSS, showcasing skills, projects, and contact information in dedicated sections. Provides a comprehensive overview of professional work and expertise.</p>
+                            </div>
+                            <div class="work-links">
+                                <a href="#" class="work-link" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/AmiyaNix/Portfolio-Website.git" class="work-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's work together</h3>
+                <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect. I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Chandigarh, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>amiyanayak3105@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+91 8018034817</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/AmiyaNix" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/amiya-nayak-4b4796231/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Amiya Kumar Nayak. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Quote Modal -->
+    <div class="quote-modal" id="quoteModal">
+        <div class="quote-content">
+            <span class="close-quote">&times;</span>
+            <div class="quote-text">
+                <i class="quote-icon">❝</i>
+                <p id="quoteText"></p>
+                <i class="quote-icon">❞</i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
