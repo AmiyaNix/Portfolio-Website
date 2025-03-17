@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Replace "YOUR_SERVICE_ID" with your actual EmailJS service ID
             // Replace "YOUR_TEMPLATE_ID" with your actual EmailJS template ID
             // You can find these in your EmailJS dashboard
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+            emailjs.send('service_qsid2nd', 'template_c4z4gla', formData)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     formStatus.textContent = 'Thank you for your message! I will get back to you soon.';
